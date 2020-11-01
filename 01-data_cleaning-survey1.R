@@ -33,7 +33,7 @@ race_vector[1:5] = c("White", "Black", "Native American", "Asian or Pacific Isla
 race_vector[6:14] = "Asian or Pacific Islander"
 race_vector[15] = "Other"
 levels(reduced_data$race) <- race_vector
-reduced_data$education <- recode(reduced_data$education, "Middle School - Grades 4 - 8"="Middle School", "Other post high school vocational training"="High school graduate", "College Degree (such as B.A., B.S.)"="Bachelors Degree", "Completed some graduate, but no degree"="Bachelor Degree")
+reduced_data$education <- recode(reduced_data$education, "Middle School - Grades 4 - 8"="Middle School", "Other post high school vocational training"="High school graduate", "College Degree (such as B.A., B.S.)"="Bachelors Degree", "Completed some graduate, but no degree"="Bachelors Degree")
 
 reduced_data <- filter(reduced_data, vote_2020 == "Donald Trump" | vote_2020 == "Joe Biden")
 
